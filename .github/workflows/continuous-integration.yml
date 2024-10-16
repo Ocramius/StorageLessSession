@@ -5,8 +5,8 @@ on:
   push:
 
 env:
-  PHP_CURRENT: "8.2"
-  PHP_NEXT: "8.3"
+  PHP_CURRENT: "8.3"
+  PHP_NEXT: "8.4"
 
 jobs:
   composer-json-lint:
@@ -64,8 +64,8 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - "8.2"
           - "8.3"
+          - "8.4"
         dependencies:
           - "lowest"
           - "locked"
