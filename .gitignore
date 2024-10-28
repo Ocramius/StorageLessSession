@@ -1,6 +1,5 @@
-vendor
-composer.phar
+/vendor
+.env
 clover.xml
-infectionlog.txt
 .phpunit.result.cache
 .phpcs-cache
