@@ -19,22 +19,18 @@ use function sprintf;
 
 use const JSON_THROW_ON_ERROR;
 
-/**
- * @internal
- *
- * @immutable
- */
-final class SameOriginRequest implements Constraint
+/** @internal */
+final readonly class SameOriginRequest implements Constraint
 {
     public const CLAIM = 'fp';
 
     /** @var list<Source> */
-    private readonly array $sources;
+    private array $sources;
     /** @var non-empty-string */
-    private readonly string $currentRequestFingerprint;
+    private string $currentRequestFingerprint;
 
     public function __construct(
-        private readonly Configuration $configuration,
+        private Configuration $configuration,
         ServerRequestInterface $serverRequest,
     ) {
         $this->sources = $this->configuration->sources();

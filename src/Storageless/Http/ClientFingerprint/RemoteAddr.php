@@ -9,8 +9,7 @@ use Psr\Http\Message\ServerRequestInterface;
 use function array_key_exists;
 use function is_string;
 
-/** @immutable */
-final class RemoteAddr implements Source
+final readonly class RemoteAddr implements Source
 {
     private const SERVER_PARAM_NAME = 'REMOTE_ADDR';
 
