@@ -1,0 +1,6 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Class PSR7Sessions\\\\Storageless\\\\Http\\\\ClientFingerprint\\\\SameOriginRequest has an uninitialized readonly property \\$currentRequestFingerprint\\. Assign it in the constructor\\.$#"
+			count: 1
+			path: src/Storageless/Http/ClientFingerprint/SameOriginRequest.php

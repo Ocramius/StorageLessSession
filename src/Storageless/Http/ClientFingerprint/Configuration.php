@@ -11,7 +11,7 @@ final class Configuration
     private readonly array $sources;
 
     /**
-     * @param list<Source> $sources
+     * @param list<Source> ...$sources
      *
      * @no-named-arguments
      */
@@ -27,7 +27,7 @@ final class Configuration
     }
 
     /**
-     * @param list<Source> $sources
+     * @param list<Source> ...$sources
      *
      * @no-named-arguments
      */

@@ -32,7 +32,7 @@ cs: vendor ## verify code style rules
 
 .PHONY: static-analysis
 static-analysis: vendor ## verify that no static analysis issues were introduced
-	$(DOCKER_PHP_EXEC) vendor/bin/psalm
+	$(DOCKER_PHP_EXEC) vendor/bin/phpstan
 
 .PHONY: bc-check
 bc-check: vendor ## check for backwards compatibility breaks
@@ -43,7 +43,7 @@ bc-check: vendor ## check for backwards compatibility breaks
 
 .PHONY: coverage
 coverage: vendor ## generate code coverage reports
-	$(DOCKER_PHP_EXEC) vendor/bin/roave-infection-static-analysis-plugin --show-mutations
+	$(DOCKER_PHP_EXEC) vendor/bin/infection --show-mutations
 
 .PHONY: clean
 clean:
