@@ -5,7 +5,6 @@
         ]
     },
     "logs": {
-        "text": "php:\/\/stderr",
         "stryker": {
             "report": "/^\\d\\.\\d\\.x$/"
         }
