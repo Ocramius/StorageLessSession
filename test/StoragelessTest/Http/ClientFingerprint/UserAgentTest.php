@@ -21,14 +21,13 @@ declare(strict_types=1);
 namespace PSR7SessionsTest\Storageless\Http\ClientFingerprint;
 
 use Laminas\Diactoros\ServerRequest;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 use PSR7Sessions\Storageless\Http\ClientFingerprint\SourceMissing;
 use PSR7Sessions\Storageless\Http\ClientFingerprint\UserAgent;
 
-/**
- * @covers \PSR7Sessions\Storageless\Http\ClientFingerprint\UserAgent
- * @covers \PSR7Sessions\Storageless\Http\ClientFingerprint\SourceMissing
- */
+#[CoversClass(UserAgent::class)]
+#[CoversClass(SourceMissing::class)]
 final class UserAgentTest extends TestCase
 {
     private const HEADER_NAME = 'User-Agent';

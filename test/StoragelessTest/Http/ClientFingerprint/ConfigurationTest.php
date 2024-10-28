@@ -20,6 +20,7 @@ declare(strict_types=1);
 
 namespace PSR7SessionsTest\Storageless\Http\ClientFingerprint;
 
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 use PSR7Sessions\Storageless\Http\ClientFingerprint\Configuration;
 use PSR7Sessions\Storageless\Http\ClientFingerprint\RemoteAddr;
@@ -28,7 +29,7 @@ use PSR7Sessions\Storageless\Http\ClientFingerprint\UserAgent;
 
 use function array_map;
 
-/** @covers \PSR7Sessions\Storageless\Http\ClientFingerprint\Configuration */
+#[CoversClass(Configuration::class)]
 final class ConfigurationTest extends TestCase
 {
     public function testDisabled(): void
