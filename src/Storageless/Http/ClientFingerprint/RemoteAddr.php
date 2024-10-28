@@ -9,6 +9,7 @@ use Psr\Http\Message\ServerRequestInterface;
 use function array_key_exists;
 use function is_string;
 
+/** @psalm-immutable */
 final readonly class RemoteAddr implements Source
 {
     private const SERVER_PARAM_NAME = 'REMOTE_ADDR';

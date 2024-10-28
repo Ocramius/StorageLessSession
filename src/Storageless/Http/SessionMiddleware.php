@@ -43,6 +43,7 @@ use stdClass;
 
 use function sprintf;
 
+/** @psalm-immutable */
 final readonly class SessionMiddleware implements MiddlewareInterface
 {
     public const SESSION_CLAIM     = 'session-data';

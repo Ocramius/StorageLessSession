@@ -6,6 +6,7 @@ namespace PSR7Sessions\Storageless\Http\ClientFingerprint;
 
 use Psr\Http\Message\ServerRequestInterface;
 
+/** @psalm-immutable */
 final readonly class UserAgent implements Source
 {
     public function extractFrom(ServerRequestInterface $request): string
