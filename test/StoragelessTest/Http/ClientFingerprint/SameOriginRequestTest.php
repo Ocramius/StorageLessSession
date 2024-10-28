@@ -31,6 +31,7 @@ use Lcobucci\JWT\Token\DataSet;
 use Lcobucci\JWT\Token\Plain;
 use Lcobucci\JWT\Token\Signature;
 use Lcobucci\JWT\Validation\ConstraintViolation;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ServerRequestInterface;
 use PSR7Sessions\Storageless\Http\ClientFingerprint\Configuration;
@@ -40,7 +41,7 @@ use RuntimeException;
 
 use function strlen;
 
-/** @covers \PSR7Sessions\Storageless\Http\ClientFingerprint\SameOriginRequest */
+#[CoversClass(SameOriginRequest::class)]
 final class SameOriginRequestTest extends TestCase
 {
     private const SOURCE_DATA = 'ID';

@@ -21,14 +21,13 @@ declare(strict_types=1);
 namespace PSR7SessionsTest\Storageless\Http\ClientFingerprint;
 
 use Laminas\Diactoros\ServerRequest;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 use PSR7Sessions\Storageless\Http\ClientFingerprint\RemoteAddr;
 use PSR7Sessions\Storageless\Http\ClientFingerprint\SourceMissing;
 
-/**
- * @covers \PSR7Sessions\Storageless\Http\ClientFingerprint\RemoteAddr
- * @covers \PSR7Sessions\Storageless\Http\ClientFingerprint\SourceMissing
- */
+#[CoversClass(RemoteAddr::class)]
+#[CoversClass(SourceMissing::class)]
 final class RemoteAddrTest extends TestCase
 {
     private const SERVER_PARAM_NAME = 'REMOTE_ADDR';

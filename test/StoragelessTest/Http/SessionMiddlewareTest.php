@@ -37,6 +37,7 @@ use Lcobucci\JWT\Token\Parser;
 use Lcobucci\JWT\Token\Plain;
 use Lcobucci\JWT\Token\RegisteredClaims;
 use PHPUnit\Framework\Assert;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
@@ -57,7 +58,7 @@ use function random_int;
 use function time;
 use function uniqid;
 
-/** @covers \PSR7Sessions\Storageless\Http\SessionMiddleware */
+#[CoversClass(SessionMiddleware::class)]
 final class SessionMiddlewareTest extends TestCase
 {
     private Configuration $config;
@@ -730,8 +731,7 @@ final class SessionMiddlewareTest extends TestCase
         return $middleware;
     }
 
-    /** @return ServerRequest */
-    private function requestWithResponseCookies(ResponseInterface $response): ServerRequestInterface
+    private function requestWithResponseCookies(ResponseInterface $response): ServerRequest
     {
         return (new ServerRequest())->withCookieParams([
             $this->config->getCookie()->getName() => $this->getCookie($response)->getValue(),

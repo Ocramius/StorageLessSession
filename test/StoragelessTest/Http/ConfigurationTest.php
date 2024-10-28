@@ -26,13 +26,14 @@ use Lcobucci\Clock\FrozenClock;
 use Lcobucci\JWT\Configuration as JwtConfig;
 use Lcobucci\JWT\Signer\Hmac\Sha256;
 use Lcobucci\JWT\Signer\Key\InMemory;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 use PSR7Sessions\Storageless\Http\ClientFingerprint\Configuration as FingerprintConfig;
 use PSR7Sessions\Storageless\Http\Configuration;
 
 use function random_bytes;
 
-/** @covers \PSR7Sessions\Storageless\Http\Configuration */
+#[CoversClass(Configuration::class)]
 final class ConfigurationTest extends TestCase
 {
     private JwtConfig $jwtConfig;
