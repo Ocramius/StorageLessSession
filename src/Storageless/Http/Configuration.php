@@ -27,7 +27,7 @@ use Lcobucci\Clock\SystemClock;
 use Lcobucci\JWT\Configuration as JwtConfig;
 use PSR7Sessions\Storageless\Http\ClientFingerprint\Configuration as FingerprintConfig;
 
-/** @immutable */
+/** @psalm-immutable */
 final class Configuration
 {
     private JwtConfig $jwtConfiguration;

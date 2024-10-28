@@ -43,14 +43,14 @@ use stdClass;
 
 use function sprintf;
 
-/** @immutable */
-final class SessionMiddleware implements MiddlewareInterface
+/** @psalm-immutable */
+final readonly class SessionMiddleware implements MiddlewareInterface
 {
     public const SESSION_CLAIM     = 'session-data';
     public const SESSION_ATTRIBUTE = 'session';
 
     public function __construct(
-        private readonly Configuration $config,
+        private Configuration $config,
     ) {
     }
 

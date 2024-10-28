@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace PSR7Sessions\Storageless\Http\ClientFingerprint;
 
-/** @immutable */
-final class Configuration
+/** @psalm-immutable */
+final readonly class Configuration
 {
     /** @var list<Source> */
-    private readonly array $sources;
+    private array $sources;
 
     /**
      * @param list<Source> ...$sources
