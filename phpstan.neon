@@ -1,0 +1,13 @@
+includes:
+    - vendor/phpstan/phpstan-phpunit/extension.neon
+    - vendor/phpstan/phpstan-phpunit/rules.neon
+    - phpstan-baseline.neon
+
+parameters:
+    level: max
+    tipsOfTheDay: false
+    tmpDir: tmp/phpstan-cache/
+    paths:
+        - examples/
+        - src/
+        - test/

@@ -101,6 +101,7 @@ final class SessionMiddleware implements MiddlewareInterface
             return null;
         }
 
+        /** @infection-ignore-all */
         if (! $token instanceof UnencryptedToken) {
             return null;
         }

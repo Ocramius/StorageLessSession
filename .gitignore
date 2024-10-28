@@ -1,5 +1,6 @@
 /vendor
 /.phpcs-cache
+/tmp
 .env
 clover.xml
 .phpunit.result.cache

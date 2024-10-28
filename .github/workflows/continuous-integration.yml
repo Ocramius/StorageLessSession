@@ -55,7 +55,7 @@ jobs:
           ini-values: "${{ env.INI_VALUES }}"
       - uses: "ramsey/composer-install@v3"
 
-      - run: "vendor/bin/psalm --shepherd --stats --output-format=github --no-cache"
+      - run: "vendor/bin/phpstan"
 
   tests:
     name: "Tests"
@@ -101,7 +101,7 @@ jobs:
 
       - name: "Run Infection"
         timeout-minutes: 30
-        run: "vendor/bin/roave-infection-static-analysis-plugin"
+        run: "vendor/bin/infection --ansi --show-mutations"
         env:
           INFECTION_DASHBOARD_API_KEY: "${{ secrets.INFECTION_DASHBOARD_API_KEY }}"
           STRYKER_DASHBOARD_API_KEY: "${{ secrets.STRYKER_DASHBOARD_API_KEY }}"
