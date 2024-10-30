@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6ffcbe67480ab4b7353dd95d44fd6e5e",
+    "content-hash": "5c0a72334c79c4299dc14b563f4f0969",
     "packages": [
         {
             "name": "dflydev/fig-cookies",
@@ -1028,16 +1028,16 @@
         },
         {
             "name": "infection/infection",
-            "version": "0.29.7",
+            "version": "0.29.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/infection/infection.git",
-                "reference": "243d501ab48a028f714993bc0c217f023af7cdbc"
+                "reference": "e30db7dda2e9308f1435097b56d20e959b06db17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/infection/infection/zipball/243d501ab48a028f714993bc0c217f023af7cdbc",
-                "reference": "243d501ab48a028f714993bc0c217f023af7cdbc",
+                "url": "https://api.github.com/repos/infection/infection/zipball/e30db7dda2e9308f1435097b56d20e959b06db17",
+                "reference": "e30db7dda2e9308f1435097b56d20e959b06db17",
                 "shasum": ""
             },
             "require": {
@@ -1141,7 +1141,7 @@
             ],
             "support": {
                 "issues": "https://github.com/infection/infection/issues",
-                "source": "https://github.com/infection/infection/tree/0.29.7"
+                "source": "https://github.com/infection/infection/tree/0.29.8"
             },
             "funding": [
                 {
@@ -1153,7 +1153,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2024-10-06T12:20:00+00:00"
+            "time": "2024-10-29T23:29:30+00:00"
         },
         {
             "name": "infection/mutator",
