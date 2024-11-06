@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5c0a72334c79c4299dc14b563f4f0969",
+    "content-hash": "c87cbcd4e3b0d5b7cd16844f91167e90",
     "packages": [
         {
             "name": "dflydev/fig-cookies",
@@ -134,16 +134,16 @@
         },
         {
             "name": "lcobucci/jwt",
-            "version": "5.4.0",
+            "version": "5.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lcobucci/jwt.git",
-                "reference": "aac4fd512681fd5cb4b77d2105ab7ec700c72051"
+                "reference": "848815d2287abd5d3c285482f8e1f501b289a2e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/aac4fd512681fd5cb4b77d2105ab7ec700c72051",
-                "reference": "aac4fd512681fd5cb4b77d2105ab7ec700c72051",
+                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/848815d2287abd5d3c285482f8e1f501b289a2e7",
+                "reference": "848815d2287abd5d3c285482f8e1f501b289a2e7",
                 "shasum": ""
             },
             "require": {
@@ -191,7 +191,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lcobucci/jwt/issues",
-                "source": "https://github.com/lcobucci/jwt/tree/5.4.0"
+                "source": "https://github.com/lcobucci/jwt/tree/5.4.1"
             },
             "funding": [
                 {
@@ -203,7 +203,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2024-10-08T22:06:45+00:00"
+            "time": "2024-11-06T06:16:04+00:00"
         },
         {
             "name": "psr/clock",
