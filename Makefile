@@ -23,7 +23,7 @@ vendor: .env docker-compose.yml Dockerfile composer.json
 
 .PHONY: unit
 unit: vendor ## run unit tests
-	$(DOCKER_PHP_EXEC) vendor/bin/phpunit
+	$(DOCKER_PHP_EXEC) vendor/bin/phpunit $(PHPUNIT_ARGS)
 
 .PHONY: cs
 cs: vendor ## verify code style rules
@@ -32,7 +32,7 @@ cs: vendor ## verify code style rules
 
 .PHONY: static-analysis
 static-analysis: vendor ## verify that no static analysis issues were introduced
-	$(DOCKER_PHP_EXEC) vendor/bin/phpstan
+	$(DOCKER_PHP_EXEC) vendor/bin/phpstan $(PHPSTAN_ARGS)
 
 .PHONY: bc-check
 bc-check: vendor ## check for backwards compatibility breaks
@@ -43,7 +43,7 @@ bc-check: vendor ## check for backwards compatibility breaks
 
 .PHONY: coverage
 coverage: vendor ## generate code coverage reports
-	$(DOCKER_PHP_EXEC) vendor/bin/infection --show-mutations
+	$(DOCKER_PHP_EXEC) vendor/bin/infection --show-mutations $(INFECTION_ARGS)
 
 .PHONY: clean
 clean:
