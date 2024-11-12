@@ -1,6 +1,55 @@
 parameters:
 	ignoreErrors:
 		-
-			message: "#^Class PSR7Sessions\\\\Storageless\\\\Http\\\\ClientFingerprint\\\\SameOriginRequest has an uninitialized readonly property \\$currentRequestFingerprint\\. Assign it in the constructor\\.$#"
+			message: '#^Class PSR7Sessions\\Storageless\\Http\\ClientFingerprint\\SameOriginRequest has an uninitialized readonly property \$currentRequestFingerprint\. Assign it in the constructor\.$#'
+			identifier: property.uninitializedReadonly
 			count: 1
 			path: src/Storageless/Http/ClientFingerprint/SameOriginRequest.php
+
+		-
+			message: '#^@readonly property PSR7Sessions\\Storageless\\Http\\Configuration\:\:\$clientFingerprintConfiguration is assigned outside of the constructor\.$#'
+			identifier: property.readOnlyByPhpDocAssignNotInConstructor
+			count: 1
+			path: src/Storageless/Http/Configuration.php
+
+		-
+			message: '#^@readonly property PSR7Sessions\\Storageless\\Http\\Configuration\:\:\$clock is assigned outside of the constructor\.$#'
+			identifier: property.readOnlyByPhpDocAssignNotInConstructor
+			count: 1
+			path: src/Storageless/Http/Configuration.php
+
+		-
+			message: '#^@readonly property PSR7Sessions\\Storageless\\Http\\Configuration\:\:\$cookie is assigned outside of the constructor\.$#'
+			identifier: property.readOnlyByPhpDocAssignNotInConstructor
+			count: 1
+			path: src/Storageless/Http/Configuration.php
+
+		-
+			message: '#^@readonly property PSR7Sessions\\Storageless\\Http\\Configuration\:\:\$idleTimeout is assigned outside of the constructor\.$#'
+			identifier: property.readOnlyByPhpDocAssignNotInConstructor
+			count: 1
+			path: src/Storageless/Http/Configuration.php
+
+		-
+			message: '#^@readonly property PSR7Sessions\\Storageless\\Http\\Configuration\:\:\$jwtConfiguration is assigned outside of the constructor\.$#'
+			identifier: property.readOnlyByPhpDocAssignNotInConstructor
+			count: 1
+			path: src/Storageless/Http/Configuration.php
+
+		-
+			message: '#^@readonly property PSR7Sessions\\Storageless\\Http\\Configuration\:\:\$refreshTime is assigned outside of the constructor\.$#'
+			identifier: property.readOnlyByPhpDocAssignNotInConstructor
+			count: 1
+			path: src/Storageless/Http/Configuration.php
+
+		-
+			message: '#^@readonly property PSR7Sessions\\Storageless\\Http\\Configuration\:\:\$sessionAttribute is assigned outside of the constructor\.$#'
+			identifier: property.readOnlyByPhpDocAssignNotInConstructor
+			count: 1
+			path: src/Storageless/Http/Configuration.php
+
+		-
+			message: '#^@readonly property cannot have a default value\.$#'
+			identifier: property.readOnlyByPhpDocDefaultValue
+			count: 3
+			path: src/Storageless/Http/Configuration.php
