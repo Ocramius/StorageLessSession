@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "azjezz/psl",
-            "version": "3.0.2",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/azjezz/psl.git",
-                "reference": "6683d60ba4d3abf8b4a4a9d94c39d0d08caa0214"
+                "reference": "4a9a6698d98a7dcbd679be8100d6935ff45e622b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/azjezz/psl/zipball/6683d60ba4d3abf8b4a4a9d94c39d0d08caa0214",
-                "reference": "6683d60ba4d3abf8b4a4a9d94c39d0d08caa0214",
+                "url": "https://api.github.com/repos/azjezz/psl/zipball/4a9a6698d98a7dcbd679be8100d6935ff45e622b",
+                "reference": "4a9a6698d98a7dcbd679be8100d6935ff45e622b",
                 "shasum": ""
             },
             "require": {
@@ -26,7 +26,7 @@
                 "ext-json": "*",
                 "ext-mbstring": "*",
                 "ext-sodium": "*",
-                "php": "~8.2.0 || ~8.3.0",
+                "php": "~8.2.0 || ~8.3.0 || ~8.4.0",
                 "revolt/event-loop": "^1.0.6"
             },
             "require-dev": {
@@ -71,7 +71,7 @@
             "description": "PHP Standard Library",
             "support": {
                 "issues": "https://github.com/azjezz/psl/issues",
-                "source": "https://github.com/azjezz/psl/tree/3.0.2"
+                "source": "https://github.com/azjezz/psl/tree/3.1.0"
             },
             "funding": [
                 {
@@ -79,7 +79,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-09-13T10:34:56+00:00"
+            "time": "2024-11-21T13:15:46+00:00"
         },
         {
             "name": "beberlei/assert",
