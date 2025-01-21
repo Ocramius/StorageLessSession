@@ -35,7 +35,7 @@
         "infection/infection": "^0.29.10",
         "laminas/laminas-diactoros": "^3.5.0",
         "laminas/laminas-httphandlerrunner": "^2.11.0",
-        "phpstan/phpstan": "^2.1.1",
+        "phpstan/phpstan": "^2.1.2",
         "phpstan/phpstan-phpunit": "^2",
         "phpunit/phpunit": "^11.5.3",
         "squizlabs/php_codesniffer": "^3.11.2"
