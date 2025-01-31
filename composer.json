@@ -37,7 +37,7 @@
         "laminas/laminas-httphandlerrunner": "^2.11.0",
         "phpstan/phpstan": "^2.1.2",
         "phpstan/phpstan-phpunit": "^2",
-        "phpunit/phpunit": "^11.5.5",
+        "phpunit/phpunit": "^11.5.6",
         "squizlabs/php_codesniffer": "^3.11.3"
     },
     "replace": {
