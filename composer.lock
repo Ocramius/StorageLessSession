@@ -536,13 +536,13 @@
             },
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-main": "3.x-dev"
-                },
                 "phpstan": {
                     "includes": [
                         "extension.neon"
                     ]
+                },
+                "branch-alias": {
+                    "dev-main": "3.x-dev"
                 }
             },
             "autoload": {
@@ -1313,8 +1313,8 @@
             "type": "library",
             "extra": {
                 "laminas": {
-                    "config-provider": "Laminas\\Diactoros\\ConfigProvider",
-                    "module": "Laminas\\Diactoros"
+                    "module": "Laminas\\Diactoros",
+                    "config-provider": "Laminas\\Diactoros\\ConfigProvider"
                 }
             },
             "autoload": {
@@ -1848,21 +1848,21 @@
         },
         {
             "name": "phpstan/phpstan-phpunit",
-            "version": "2.0.1",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-phpunit.git",
-                "reference": "4b6ad7fab8683ff4efd7887ba26ef8ee171c7475"
+                "reference": "d09e152f403c843998d7a52b5d87040c937525dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-phpunit/zipball/4b6ad7fab8683ff4efd7887ba26ef8ee171c7475",
-                "reference": "4b6ad7fab8683ff4efd7887ba26ef8ee171c7475",
+                "url": "https://api.github.com/repos/phpstan/phpstan-phpunit/zipball/d09e152f403c843998d7a52b5d87040c937525dd",
+                "reference": "d09e152f403c843998d7a52b5d87040c937525dd",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.4 || ^8.0",
-                "phpstan/phpstan": "^2.0"
+                "phpstan/phpstan": "^2.0.4"
             },
             "conflict": {
                 "phpunit/phpunit": "<7.0"
@@ -1893,9 +1893,9 @@
             "description": "PHPUnit extensions and rules for PHPStan",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan-phpunit/issues",
-                "source": "https://github.com/phpstan/phpstan-phpunit/tree/2.0.1"
+                "source": "https://github.com/phpstan/phpstan-phpunit/tree/2.0.4"
             },
-            "time": "2024-11-12T12:48:00+00:00"
+            "time": "2025-01-22T13:07:38+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -3536,16 +3536,16 @@
         },
         {
             "name": "shish/safe",
-            "version": "v2.6.3",
+            "version": "v2.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/shish/safe.git",
-                "reference": "88c2cf506c6b497cd2a961c5e8116a18c5c272c0"
+                "reference": "482e6227330a70b21c1c9e9301cc99b5658ccb89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shish/safe/zipball/88c2cf506c6b497cd2a961c5e8116a18c5c272c0",
-                "reference": "88c2cf506c6b497cd2a961c5e8116a18c5c272c0",
+                "url": "https://api.github.com/repos/shish/safe/zipball/482e6227330a70b21c1c9e9301cc99b5658ccb89",
+                "reference": "482e6227330a70b21c1c9e9301cc99b5658ccb89",
                 "shasum": ""
             },
             "require": {
@@ -3576,6 +3576,7 @@
                     "deprecated/mysqli.php",
                     "generated/apache.php",
                     "generated/apcu.php",
+                    "generated/array.php",
                     "generated/bzip2.php",
                     "generated/calendar.php",
                     "generated/classobj.php",
@@ -3666,19 +3667,23 @@
             "description": "PHP core functions that throw exceptions instead of returning FALSE on error (a less-abandoned fork of thecodingmachine/safe)",
             "support": {
                 "issues": "https://github.com/shish/safe/issues",
-                "source": "https://github.com/shish/safe/tree/v2.6.3"
+                "source": "https://github.com/shish/safe/tree/v2.6.4"
             },
             "funding": [
+                {
+                    "url": "https://github.com/OskarStark",
+                    "type": "github"
+                },
                 {
                     "url": "https://github.com/shish",
                     "type": "github"
                 },
                 {
-                    "url": "https://ko-fi.com/shish2k",
-                    "type": "ko_fi"
+                    "url": "https://github.com/staabm",
+                    "type": "github"
                 }
             ],
-            "time": "2024-10-08T20:21:12+00:00"
+            "time": "2024-12-18T13:36:07+00:00"
         },
         {
             "name": "slevomat/coding-standard",
@@ -3993,12 +3998,12 @@
             },
             "type": "library",
             "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/contracts",
+                    "name": "symfony/contracts"
+                },
                 "branch-alias": {
                     "dev-main": "3.5-dev"
-                },
-                "thanks": {
-                    "name": "symfony/contracts",
-                    "url": "https://github.com/symfony/contracts"
                 }
             },
             "autoload": {
@@ -4109,16 +4114,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v7.2.0",
+            "version": "v7.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "6de263e5868b9a137602dd1e33e4d48bfae99c49"
+                "reference": "87a71856f2f56e4100373e92529eed3171695cfb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/6de263e5868b9a137602dd1e33e4d48bfae99c49",
-                "reference": "6de263e5868b9a137602dd1e33e4d48bfae99c49",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/87a71856f2f56e4100373e92529eed3171695cfb",
+                "reference": "87a71856f2f56e4100373e92529eed3171695cfb",
                 "shasum": ""
             },
             "require": {
@@ -4153,7 +4158,7 @@
             "description": "Finds files and directories via an intuitive fluent interface",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/finder/tree/v7.2.0"
+                "source": "https://github.com/symfony/finder/tree/v7.2.2"
             },
             "funding": [
                 {
@@ -4169,7 +4174,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-10-23T06:56:12+00:00"
+            "time": "2024-12-30T19:00:17+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -4574,12 +4579,12 @@
             },
             "type": "library",
             "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/contracts",
+                    "name": "symfony/contracts"
+                },
                 "branch-alias": {
                     "dev-main": "3.5-dev"
-                },
-                "thanks": {
-                    "name": "symfony/contracts",
-                    "url": "https://github.com/symfony/contracts"
                 }
             },
             "autoload": {
